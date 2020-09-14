@@ -1,0 +1,16 @@
+#
+#
+#sms:
+#  monitor:
+#    serverUrl: https://monitor.schindlerioee.com
+#    username: admin
+#    password: 123456
+#
+#
+
+sms:
+  monitor:
+    login-url: https://www.sms-login.com
+    username: samzeng
+    password: 123456
+    server-url: https://www.sms-monitor.com
