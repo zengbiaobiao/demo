@@ -8,10 +8,10 @@
         <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.schindler.ioee</groupId>
-    <artifactId>sms-monitor-boot-starter</artifactId>
+    <groupId>com.zengbiaobiao.demo</groupId>
+    <artifactId>demo-monitor-boot-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sms-monitor-boot-starter</name>
+    <name>demo-monitor-boot-starter</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

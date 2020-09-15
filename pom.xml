@@ -8,10 +8,10 @@
         <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.schindler.ioee</groupId>
-    <artifactId>ioee-common-parent</artifactId>
+    <groupId>com.zengbiaobiao.demo</groupId>
+    <artifactId>demo-common-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>ioee-common-parent</name>
+    <name>demo-common-parent</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

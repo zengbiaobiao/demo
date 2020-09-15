@@ -1,12 +1,12 @@
-package com.schindler.ioee.sms.monitor.autoconfig;
+package com.zengbiaobiao.demo.monitor.autoconfig;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
  * @author zengsam
  */
-@ConfigurationProperties(prefix = "sms.monitor")
-public class SmsMonitorProperties {
+@ConfigurationProperties(prefix = "demo.monitor")
+public class MonitorProperties {
     private String loginUrl;
     private String username;
     private String password;

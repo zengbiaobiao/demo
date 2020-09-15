@@ -1,4 +1,4 @@
-package com.schindler.ioee.sms.monitor.autoconfig;
+package com.zengbiaobiao.demo.monitor.autoconfig;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -11,14 +11,15 @@ import org.springframework.context.annotation.Configuration;
  * @author zengsam
  */
 @Configuration
-@ConditionalOnClass(SmsMonitorService.class)
-@EnableConfigurationProperties(SmsMonitorProperties.class)
-public class SmsMonitorAutoConfiguration {
+@ConditionalOnClass(MonitorService.class)
+@EnableConfigurationProperties(MonitorProperties.class)
+public class MonitorAutoConfiguration {
     @Autowired
-    private SmsMonitorProperties properties;
+    private MonitorProperties properties;
+
     @Bean
     @ConditionalOnMissingBean
-    public SmsMonitorService monitorService() {
-        return new SmsMonitorService(properties);
+    public MonitorService monitorService() {
+        return new MonitorService(properties);
     }
 }

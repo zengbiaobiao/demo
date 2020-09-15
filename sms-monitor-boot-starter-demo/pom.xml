@@ -25,8 +25,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.schindler.ioee</groupId>
-			<artifactId>sms-monitor-boot-starter</artifactId>
+			<groupId>com.zengbiaobiao.demo</groupId>
+			<artifactId>demo-monitor-boot-starter</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
