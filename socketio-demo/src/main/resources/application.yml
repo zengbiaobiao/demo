@@ -1,0 +1,14 @@
+
+
+
+wss:
+  server:
+    host: 127.0.0.1
+    port: 80
+logging:
+  level:
+    com:
+      corundumstudio:
+        socketio: trace
+
+
