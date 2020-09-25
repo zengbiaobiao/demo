@@ -1,10 +1,10 @@
 # Socket IO Java Socket Close Issue
 
-### Workaround
+### Scenario
 
 The java framework socketio-client may cause IllegalStateException when you call Socker.close() method manually, it's proved it's the bug from socketio-client.
 
-My workaround is shown as below:
+My workbench is shown as below:
 
 Socket IO Server: 
 
@@ -28,7 +28,7 @@ Socket IO Client:
 
 For the server side, the namespace was adopted.
 
-And below code was used to create a Socket object.
+And below code was used to create a Socket object from the client side.
 
 ```java
 private static Socket connect() {
@@ -70,7 +70,7 @@ private static final String HOST = "http://127.0.0.1";
     }
 ```
 
-
+---
 
 ### Root Cause
 
@@ -109,6 +109,8 @@ private String encodeAsString(Packet obj) {
 
 If the message "41/event," was sent to server, the server will parse the namespace /event, and then read the remaining byte buffer "," again, then try to parse Packet Type with value 12, an *IllegalStateException*  will be thrown.
 
+---
+
 ### Solution
 
 So we change the code as below:
@@ -139,3 +141,7 @@ private String encodeAsString(Packet obj) {
 And the close protocol will be sent correct.
 
 Since the git hub was not updated yet, I download the project and built it by myself, and it works.
+
+---
+
+The demo project can be found on [GitHub](https://github.com/zengbiaobiao/demo/edit/master/socketio-demo)
